@@ -12,32 +12,41 @@ function getComputerChoice() {
 }
 
 function playRound(playerSelection, computerSelection) {
+    const results = document.querySelector("#results");
+    const result = document.createElement("p");
     if(playerSelection.toUpperCase() === computerSelection.toUpperCase()){
-        console.log("It'a a Tie!");
+        result.textContent = "It'a a Tie!";
+        results.appendChild(result);
     }else{
         switch(playerSelection.toUpperCase()){
             case "ROCK":
                 if(computerSelection === "Paper"){
-                    console.log("You Lose! Paper beats Rock");
+                    result.textContent = "You Lose! Paper beats Rock";
+                    results.appendChild(result);
                     break;
                 }else{
-                    console.log("You Win! Rock beats Scissors");
+                    result.textContent = "You Win! Rock beats Scissors"
+                    results.appendChild(result);
                     break;
                 }
             case "PAPER":
                 if(computerSelection === "Rock"){
-                    console.log("You Win! Paper beats Rock");
+                    result.textContent = "You Win! Paper beats Rock"
+                    results.appendChild(result);
                     break;
                 }else{
-                    console.log("You Lose! Scissors beats Paper");
+                    result.textContent = "You Lose! Scissors beats Paper"
+                    results.appendChild(result);
                     break;
                 }
             case "SCISSORS":
                 if(computerSelection === "Paper"){
-                    console.log("You Win! Scissors beats Paper");
+                    result.textContent = "You Win! Scissors beats Paper"
+                    results.appendChild(result);
                     break;
                 }else{
-                    console.log("You Lose! Rock beats Scissors");
+                    result.textContent = "You Lose! Rock beats Scissors"
+                    results.appendChild(result);
                     break;
                 }
         }
