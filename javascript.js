@@ -26,42 +26,42 @@ function playRound(playerSelection, computerSelection) {
     const computerScore = document.querySelector("#computerScore");
     if(playerSelection.toUpperCase() === computerSelection.toUpperCase()){
         result.textContent = "It'a a Tie!";
-        results.appendChild(result);
+        results.insertBefore(result, results.firstChild);
     }else{
         switch(playerSelection.toUpperCase()){
             case "ROCK":
                 if(computerSelection === "Paper"){
                     result.textContent = "You Lose! Paper beats Rock";
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     computerWins++;
                     break;
                 }else{
                     result.textContent = "You Win! Rock beats Scissors"
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     playerWins++;
                     break;
                 }
             case "PAPER":
                 if(computerSelection === "Rock"){
                     result.textContent = "You Win! Paper beats Rock"
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     playerWins++;
                     break;
                 }else{
                     result.textContent = "You Lose! Scissors beats Paper"
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     computerWins++;
                     break;
                 }
             case "SCISSORS":
                 if(computerSelection === "Paper"){
                     result.textContent = "You Win! Scissors beats Paper"
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     playerWins++;
                     break;
                 }else{
                     result.textContent = "You Lose! Rock beats Scissors"
-                    results.appendChild(result);
+                    results.insertBefore(result, results.firstChild);
                     computerWins++;
                     break;
                 }
