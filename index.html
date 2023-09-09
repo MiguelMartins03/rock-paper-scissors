@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
 
-    <div id="score">Player: <span id="playerScore">0</span> - <span id="computerScore">0</span> :Computer</div>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
 
-    <div id="buttons">
-        <button id="rock" class="gameButton">Rock</button>
-        <button id="paper" class="gameButton">Paper</button>
-        <button id="scissors" class="gameButton">Scissors</button>
+        <h4>First to 5 victories wins the game!</h4>
     </div>
 
-    <div id="winner"></div>
+    <div class="body">
+        <div id="score">Player: <span id="playerScore">0</span> - <span id="computerScore">0</span> :Computer</div>
 
-    <div id="results"></div>
+        <div id="buttons">
+            <button id="rock" class="gameButton">Rock</button>
+            <button id="paper" class="gameButton">Paper</button>
+            <button id="scissors" class="gameButton">Scissors</button>
+        </div>
+
+        <div id="winner"></div>
+
+        <div id="results"></div>
+    </div>
+
 </body>
 
 </html>

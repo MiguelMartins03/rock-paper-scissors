@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF8;
+}
+
+.header, .body{
+    padding: 100px;
+    text-align: center;
+}
+
+.header{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    border-bottom: #3882F6 solid 4px;
+}
+
+h1{
+    font-size: 75px;
+    margin-bottom: 40px;
+}
+
+#score{
+    font-size: 110px;
+    margin-bottom: 50px;
+    padding-left: 145px;
+}
+
+button{
+    background-color: #1F2937;
+    font-size: 18px;
+    font-weight: bold;
+    color: #E5E7EB;
+    padding: 5px 9px;
+    border: #3882F6 solid 2px;
+    border-radius: 7px;
+    width: 130px;
+    margin-bottom: 30px;
+}
+
+#winner{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+p{
+    margin-bottom: 15px;
+}

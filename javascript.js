@@ -113,27 +113,3 @@ function resetGame(){
         playRound(event.target.id, getComputerChoice());
     }));
 }
-
-// function game() {
-//     let playerWins = 0;
-//     let computerWins = 0;
-//     for(let i = 0; i < 5; i++){
-//         let result = playRound(prompt("Choose either \"Rock\", \"Paper\" or \"Scissors\"", "Rock"), getComputerChoice());
-//         let winOrLose = result.charAt(4);
-//         if(winOrLose === "W"){
-//             playerWins++;
-//         }else if(winOrLose === "L"){
-//             computerWins++;
-//         }
-//         console.log(result);
-//     }
-//     if(playerWins > computerWins){
-//         return `You Win!\nTotal victories: ${playerWins}`;
-//     }else if(playerWins < computerWins){
-//         return `You Lose!\nTotal victories: ${playerWins}`;
-//     }else{
-//         return `You Tied!\nTotal victories: ${playerWins}`;
-//     }
-// }
-
-// console.log(game());
